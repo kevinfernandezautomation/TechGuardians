@@ -59,11 +59,40 @@
   </div>
   <div class="reader-tools" aria-label="Herramientas de lectura">
     <button id="zoomOut" title="Alejar imagen">−</button><span class="zoom-value" id="zoomValue">100%</span><button id="zoomIn" title="Ampliar imagen">＋</button><button id="zoomReset">Restablecer</button>
-    <button id="toggleScript">📜 Guion</button><span class="voice-status" id="voiceStatus">Narración en español lista</span>
+    <button id="toggleScript">📜 Guion</button>
+<button id="openPageVideoBtn" class="video-tool-btn" type="button" title="Ver video de esta página">▶ Video</button>
+<button id="backHomeBtn" class="home-tool-btn" type="button" title="Volver a la página principal">⌂ Inicio</button><span class="voice-status" id="voiceStatus">Narración en español lista</span>
   </div>
   <aside class="script-panel" id="scriptPanel" hidden><div class="script-head"><div><h3 id="scriptTitle">Guion</h3><div class="script-note">Guion accesible completo de la página: acciones, narración, rótulos y diálogos. El guion accesible contiene el texto de cada página, incluyendo narración, rótulos, pantallas y diálogos.</div></div><button id="closeScript" aria-label="Cerrar guion">✕</button></div><div id="scriptText"></div></aside>
   <div class="thumbs" id="thumbs"></div>
 </div>
 <script src="app.js"></script>
+
+<div id="videoPrompt" class="video-prompt" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="videoPromptTitle">
+  <div class="video-prompt-card">
+    <button id="closeVideoPrompt" class="video-x" aria-label="Cerrar">×</button>
+    <span class="eyebrow">EXPERIENCIA MULTIMEDIA</span>
+    <h2 id="videoPromptTitle">¿Desea ver esta página en video?</h2>
+    <p>Vea la introducción animada de la página 1 de <strong>TECH GUARDIANS: El Código del Mundo</strong>.</p>
+    <div class="video-prompt-actions">
+      <button id="playPageVideo" class="primary">▶ Ver video en YouTube</button>
+      <button id="continueManga">Continuar leyendo</button>
+    </div>
+  </div>
+</div>
+
+<div id="videoModal" class="video-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Video de la página 1">
+  <div class="video-modal-card">
+    <div class="video-modal-head">
+      <div><b>Página 1 · Video</b><span>Capítulo 1 — El día que el mundo se detuvo</span></div>
+      <button id="closePageVideo" aria-label="Cerrar video">×</button>
+    </div>
+    <video id="pageVideo" controls playsinline preload="metadata">
+      <source src="assets/video/chapter-01/page-01.mp4" type="video/mp4">
+      Su navegador no puede reproducir este video.
+    </video>
+  </div>
+</div>
+
 </body>
 </html>

@@ -41,3 +41,32 @@ Puede publicarse como sitio estático en GitHub Pages. Abra `index.html` para pr
 - Se eliminaron todos los MP3 y toda la funcionalidad de reproducción de audio.
 - El texto visible de la nueva página 2 se transcribió e integró en `app.js` como parte del guion accesible.
 - El botón Guion permite consultar narración, rótulos, pantallas y diálogos de cada página.
+
+
+## Versión 6
+- Se integró el MP4 suministrado para la página 1.
+- Al iniciar la lectura desde la página 1 aparece: “¿Desea ver esta página en video?”.
+- “Ver video” abre un reproductor responsive; “Continuar leyendo” mantiene el manga.
+- El video no se reproduce automáticamente sin elección del lector.
+- Compatible con escritorio, tablet y móvil mediante `playsinline` y controles nativos.
+
+
+## Versión 7
+- Botón `▶ Video` visible junto a `Guion` dentro del lector.
+- El botón funciona en escritorio, tablet y móvil.
+- En página 1 reproduce el MP4 integrado; en páginas sin video aparece `Sin video` deshabilitado.
+- Botón `⌂ Inicio` visible dentro del lector para cerrar el capítulo y volver a la página principal.
+
+
+## Versión 8 — corrección funcional
+- Corregido un error de orden de inicialización JavaScript que podía detener el script antes de activar los botones.
+- `⌂ Inicio` ahora realiza navegación real a `./index.html`.
+- `▶ Video` carga explícitamente el MP4 de la página 1 y abre el modal.
+- El botón de video se actualiza al cambiar de página.
+
+
+## Versión 9
+- El botón `▶ Video` de la página 1 abre el video publicado en YouTube.
+- URL configurada: https://youtu.be/b6xK96FcaoI
+- El enlace se abre en una pestaña nueva para no perder la posición de lectura del manga.
+- Las demás páginas continúan mostrando `Sin video` hasta que se les asigne un enlace.

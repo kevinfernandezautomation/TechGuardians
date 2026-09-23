@@ -63,9 +63,9 @@ function render(){
   zoom=1;applyZoom();renderScript();
   document.querySelector('.page-scroll')?.scrollTo({top:0,left:0});
 }
-function openReader(){reader.classList.add('open');reader.setAttribute('aria-hidden','false');document.body.classList.add('reader-open');render();}
-function closeReader(){reader.classList.remove('open');reader.setAttribute('aria-hidden','true');document.body.classList.remove('reader-open');}
-function go(n){current=Math.max(0,Math.min(totalPages-1,n));render();}
+function openReader(){reader.classList.add('open');reader.setAttribute('aria-hidden','false');document.body.classList.add('reader-open');render();setTimeout(offerPage1Video,180);}
+function closeReader(){closePageVideo();dismissVideoPrompt();page1VideoAsked=false;reader.classList.remove('open');reader.setAttribute('aria-hidden','true');document.body.classList.remove('reader-open');}
+function go(n){current=Math.max(0,Math.min(totalPages-1,n));render();updatePageVideoButton();}
 
 pages.forEach((src,i)=>{const im=new Image();im.src=src;im.alt=`Miniatura página ${i+1}`;im.loading='lazy';im.onclick=()=>go(i);thumbs.appendChild(im)});
 ['openReader','heroRead','cardRead'].forEach(id=>document.getElementById(id).onclick=openReader);
@@ -82,4 +82,73 @@ document.getElementById('closeScript').onclick=()=>scriptPanel.hidden=true;
 document.addEventListener('keydown',e=>{if(!reader.classList.contains('open'))return;if(e.key==='ArrowRight'||e.key==='PageDown')go(current+1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(current-1);if(e.key==='+'){zoom=Math.min(3,zoom+.25);applyZoom()}if(e.key==='-'){zoom=Math.max(.5,zoom-.25);applyZoom()}if(e.key==='Escape'&&!document.fullscreenElement)closeReader();});
 stage.addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});
 stage.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-touchX;if(Math.abs(d)>55&&zoom===1)go(current+(d<0?1:-1))},{passive:true});
+
+const videoPrompt=document.getElementById('videoPrompt');
+const videoModal=document.getElementById('videoModal');
+const pageVideo=document.getElementById('pageVideo');
+let page1VideoAsked=false;
+
+function offerPage1Video(){
+  if(current!==0 || page1VideoAsked)return;
+  page1VideoAsked=true;
+  videoPrompt.hidden=false;
+  videoPrompt.setAttribute('aria-hidden','false');
+}
+function dismissVideoPrompt(){
+  videoPrompt.hidden=true;
+  videoPrompt.setAttribute('aria-hidden','true');
+}
+function openPageVideo(){
+  dismissVideoPrompt();
+  videoModal.hidden=false;
+  videoModal.setAttribute('aria-hidden','false');
+  pageVideo.currentTime=0;
+  pageVideo.play().catch(()=>{});
+}
+function closePageVideo(){
+  pageVideo.pause();
+  videoModal.hidden=true;
+  videoModal.setAttribute('aria-hidden','true');
+}
+
+
+// v8: controles del lector inicializados antes del primer render.
+const pageVideos={0:'https://youtu.be/b6xK96FcaoI'};
+const openPageVideoBtn=document.getElementById('openPageVideoBtn');
+const backHomeBtn=document.getElementById('backHomeBtn');
+
+function updatePageVideoButton(){
+  if(!openPageVideoBtn)return;
+  const available=Boolean(pageVideos[current]);
+  openPageVideoBtn.disabled=!available;
+  openPageVideoBtn.textContent=available?'▶ Video':'▶ Sin video';
+  openPageVideoBtn.title=available?'Ver video de esta página':'Esta página todavía no tiene video';
+}
+
+function playCurrentPageVideo(){
+  const url=pageVideos[current];
+  if(!url)return;
+  window.open(url,'_blank','noopener,noreferrer');
+}
+
+function goToHome(){
+  try{
+    if(pageVideo)pageVideo.pause();
+  }catch(e){}
+  // Navegación real al documento principal, funciona en GitHub Pages y servidor web.
+  window.location.href='./index.html';
+}
+
+if(openPageVideoBtn)openPageVideoBtn.addEventListener('click',playCurrentPageVideo);
+if(backHomeBtn)backHomeBtn.addEventListener('click',goToHome);
+
+document.getElementById('playPageVideo').onclick=playCurrentPageVideo;
+document.getElementById('continueManga').onclick=dismissVideoPrompt;
+document.getElementById('closeVideoPrompt').onclick=dismissVideoPrompt;
+document.getElementById('closePageVideo').onclick=closePageVideo;
+videoPrompt.addEventListener('click',e=>{if(e.target===videoPrompt)dismissVideoPrompt();});
+videoModal.addEventListener('click',e=>{if(e.target===videoModal)closePageVideo();});
+pageVideo.addEventListener('ended',closePageVideo);
+
 render();
+updatePageVideoButton();
