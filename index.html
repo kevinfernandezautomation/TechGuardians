@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="TECH GUARDIANS: El Código del Mundo — lector online del manga de ciencia ficción y aventura tecnológica." />
+  <title>TECH GUARDIANS — Manga Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="TECH GUARDIANS, inicio"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></a>
+  <nav><a href="#historia">Historia</a><a href="#capitulos">Capítulos</a><button id="openReader" class="primary">Leer ahora</button></nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-copy">
+      <p class="eyebrow">CIENCIA FICCIÓN · AVENTURA TECNOLÓGICA · MISTERIO</p>
+      <h1>Cuando todo está conectado, una pequeña falla puede convertirse en un problema mundial.</h1>
+      <p class="lead">Año 2045. NEXUS sostiene hospitales, transporte, universidades, comunicaciones y servicios esenciales alrededor del planeta. Cuando una cadena de anomalías comienza a propagarse, seis jóvenes especialistas descubren que cada fallo podría ser una pieza de algo mucho mayor.</p>
+      <div class="actions"><button id="heroRead" class="primary big">Comenzar capítulo 1</button><a class="secondary big" href="#historia">Conocer la trama</a></div>
+      <div class="stats"><span><b>24</b> capítulos previstos</span><span><b>6</b> arcos</span><span><b>1</b> mundo conectado</span></div>
+    </div>
+    <div class="hero-art"><img src="assets/images/chapter-01/page-01.png" alt="Portada visual del capítulo 1 de TECH GUARDIANS" /></div>
+  </section>
+
+  <section class="story" id="historia">
+    <div><p class="eyebrow">LA HISTORIA</p><h2>El conocimiento es su poder.</h2></div>
+    <div class="story-copy">
+      <p>TECH GUARDIANS sigue a Akira, Maya, Leo, Hana, Noah y Sofia, especialistas en desarrollo de software, calidad, inteligencia artificial, ciberseguridad, cloud/DevOps y experiencia de usuario. No tienen superpoderes: investigan, prueban, discuten y construyen soluciones mientras una crisis digital de escala internacional pone a prueba el mundo que la humanidad creó.</p>
+      <p>NEXUS no es una sola inteligencia artificial, sino una infraestructura global formada por sistemas conectados durante décadas. Detrás de las anomalías existe un misterio que obligará a los protagonistas a preguntarse no solo cómo funciona la tecnología, sino quién debe controlarla y qué significa realmente construir un sistema de calidad.</p>
+    </div>
+  </section>
+
+  <section class="chapters" id="capitulos">
+    <p class="eyebrow">TEMPORADA 1 · ARCO I: EL PRIMER FALLO</p><h2>Capítulos</h2>
+    <article class="chapter-card">
+      <img src="assets/images/chapter-01/page-01.png" alt="Capítulo 1" />
+      <div><span class="badge">DISPONIBLE · VISTA PREVIA</span><h3>01 — El día que el mundo se detuvo</h3><p>NEXUS comienza a fallar. Hospitales, transporte, universidades y comunicaciones muestran anomalías diferentes. Los protagonistas observan piezas distintas de una crisis que parece demasiado coordinada para ser una coincidencia.</p><p class="available">12 páginas ilustradas incluidas en esta edición web.</p><button id="cardRead" class="primary">Leer capítulo</button></div>
+    </article>
+    <div class="coming"><div><b>02</b><span>404</span></div><div><b>03</b><span>La prueba imposible</span></div><div><b>04</b><span>TECH GUARDIANS</span></div><div><b>05–24</b><span>Próximamente</span></div></div>
+  </section>
+</main>
+
+<footer><div class="brand"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></div><p>Proyecto original · Manga digital · © 2026. Todos los derechos reservados.</p></footer>
+
+<div class="reader" id="reader" aria-hidden="true">
+  <div class="reader-bar">
+    <div><b>Capítulo 1</b><span>El día que el mundo se detuvo</span></div>
+    <div class="reader-actions"><button id="fitToggle" title="Cambiar ajuste">Ajustar ancho</button><button id="fullScreen" title="Pantalla completa">⛶</button><button id="closeReader" aria-label="Cerrar lector">✕</button></div>
+  </div>
+  <div class="progress"><i id="progress"></i></div>
+  <div class="reader-stage" id="readerStage">
+    <button class="nav prev" id="prevPage" aria-label="Página anterior">‹</button>
+    <figure><div class="page-scroll"><div class="page-shell"><img id="pageImage" alt="Página del manga" /></div></div><figcaption><span id="pageLabel"></span><span>Use ← → o deslice para navegar</span></figcaption></figure>
+    <button class="nav next" id="nextPage" aria-label="Página siguiente">›</button>
+  </div>
+  <div class="reader-tools" aria-label="Herramientas de lectura">
+    <button id="zoomOut" title="Alejar imagen">−</button><span class="zoom-value" id="zoomValue">100%</span><button id="zoomIn" title="Ampliar imagen">＋</button><button id="zoomReset">Restablecer</button>
+    <button id="toggleScript">📜 Guion</button><span class="voice-status" id="voiceStatus">Narración en español lista</span>
+  </div>
+  <aside class="script-panel" id="scriptPanel" hidden><div class="script-head"><div><h3 id="scriptTitle">Guion</h3><div class="script-note">Guion accesible completo de la página: acciones, narración, rótulos y diálogos. El guion accesible contiene el texto de cada página, incluyendo narración, rótulos, pantallas y diálogos.</div></div><button id="closeScript" aria-label="Cerrar guion">✕</button></div><div id="scriptText"></div></aside>
+  <div class="thumbs" id="thumbs"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
