@@ -70,3 +70,46 @@ Puede publicarse como sitio estático en GitHub Pages. Abra `index.html` para pr
 - URL configurada: https://youtu.be/b6xK96FcaoI
 - El enlace se abre en una pestaña nueva para no perder la posición de lectura del manga.
 - Las demás páginas continúan mostrando `Sin video` hasta que se les asigne un enlace.
+
+
+## Versión 10
+- Páginas 1–5 reemplazadas con las imágenes suministradas.
+- Guiones de páginas 1–5 transcritos y sincronizados con cada imagen.
+- Se conservan páginas y guiones 6–12.
+
+
+## Versión 11
+- Páginas 6–10 sustituidas por las imágenes suministradas.
+- Guiones de páginas 6–10 transcritos e integrados en `app.js`.
+- El botón Guion queda sincronizado con la página visible.
+- Se conservan páginas y guiones 1–5 y 11–12.
+- Se mantiene el enlace de YouTube configurado para la página 1.
+
+
+## Versión 12
+- Página 11 sustituida por la nueva imagen PNG suministrada.
+- Página 12 sustituida por la nueva imagen WebP suministrada.
+- `app.js` actualizado para cargar `page-12.webp`.
+- Guiones completos de las páginas 11 y 12 transcritos e integrados.
+- El botón Guion queda sincronizado con las 12 páginas del capítulo.
+
+
+## Versión 13
+- Sustituidas las imágenes de las páginas 1, 2, 3, 4 y 5 del capítulo 1 por las nuevas imágenes WebP suministradas.
+- Eliminadas las versiones PNG anteriores de esas cinco páginas.
+- `app.js` actualizado para cargar `page-01.webp` a `page-05.webp`.
+- Se mantienen sin cambios los guiones asociados y las páginas 6–12.
+
+
+## Versión 14
+- Sustituidas las páginas 6, 7, 8, 9, 10 y 11 del capítulo 1 por las nuevas imágenes WebP suministradas.
+- Eliminadas las versiones PNG anteriores de las páginas 6–11.
+- `app.js` actualizado para cargar `page-06.webp` a `page-11.webp`.
+- Las páginas 1–5 de la versión 13 y la página 12 se mantienen.
+
+
+## Actualización v15
+- Capítulo 1 ampliado a 17 páginas WEBP.
+- Páginas 13–17 incorporadas con guion accesible.
+- Portada/inicio corregida para usar page-01.webp.
+- Página 2 enlazada al video https://youtu.be/lPzLLjLngvQ.
