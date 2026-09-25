@@ -82,3 +82,21 @@
 @media(max-width:430px){
  .video-tool-btn,.home-tool-btn,#toggleScript{flex:1 1 30%;min-width:86px;font-size:.74rem!important}
 }
+.chapter-selectors>div{gap:.55rem;align-items:center}.chapter-selectors button{margin-top:.35rem;padding:.55rem .8rem}.reader-tools #prevChapterBtn,.reader-tools #nextChapterBtn{white-space:nowrap}.reader-tools button:disabled{opacity:.38;cursor:not-allowed}
+
+
+/* v24 — expansión transmedia: película y videojuego */
+.transmedia{max-width:1200px;margin:0 auto;padding:80px 24px;border-top:1px solid rgba(255,255,255,.08)}
+.transmedia.alternate{padding-top:55px}
+.transmedia-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:26px}
+.transmedia-head h2{margin:.2rem 0 0;font-size:clamp(2rem,5vw,3.4rem);line-height:1.05}
+.soon-badge{flex:0 0 auto;padding:10px 16px;border:1px solid rgba(65,210,255,.65);border-radius:999px;background:rgba(20,150,220,.14);color:#83e4ff;font-weight:900;letter-spacing:.08em;box-shadow:0 0 30px rgba(33,180,255,.12)}
+.transmedia-card{overflow:hidden;border:1px solid rgba(92,205,255,.22);border-radius:24px;background:linear-gradient(145deg,rgba(9,27,48,.95),rgba(5,14,27,.98));box-shadow:0 24px 80px rgba(0,0,0,.28)}
+.transmedia-card>img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid rgba(92,205,255,.18)}
+.transmedia-copy{padding:28px 30px 32px}
+.transmedia-copy h3{margin:0 0 12px;font-size:clamp(1.35rem,3vw,2rem)}
+.transmedia-copy p{max-width:1000px;color:#c7d8e8;line-height:1.7}
+.feature-chips{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}
+.feature-chips span{padding:8px 12px;border-radius:999px;background:#0b2a45;border:1px solid rgba(78,198,255,.25);color:#bdeaff;font-size:.86rem;font-weight:700}
+.status-copy{margin-bottom:0!important;padding:15px 17px;border-left:3px solid #39c9ff;background:rgba(57,201,255,.07);border-radius:4px 12px 12px 4px}
+@media(max-width:760px){.topbar nav a[href="#pelicula"],.topbar nav a[href="#videojuego"]{display:none}.transmedia{padding:55px 16px}.transmedia-head{align-items:flex-start;flex-direction:column}.soon-badge{font-size:.78rem}.transmedia-card{border-radius:17px}.transmedia-copy{padding:20px 18px 24px}.transmedia-copy p{font-size:.95rem}.feature-chips{gap:7px}}

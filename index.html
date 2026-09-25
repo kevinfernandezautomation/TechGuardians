@@ -11,7 +11,7 @@
 <body>
 <header class="topbar">
   <a class="brand" href="#inicio" aria-label="TECH GUARDIANS, inicio"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></a>
-  <nav><a href="#historia">Historia</a><a href="#capitulos">Capítulos</a><button id="openReader" class="primary">Leer ahora</button></nav>
+  <nav><a href="#historia">Historia</a><a href="#capitulos">Capítulos</a><a href="#pelicula">Película</a><a href="#videojuego">Videojuego</a><button id="openReader" class="primary">Leer ahora</button></nav>
 </header>
 
 <main>
@@ -40,8 +40,29 @@
       <img src="assets/images/chapter-01/page-01.webp?v=17" alt="Capítulo 1" />
       <div><span class="badge">DISPONIBLE · VISTA PREVIA</span><h3>01 — El día que el mundo se detuvo</h3><p>NEXUS comienza a fallar. Hospitales, transporte, universidades y comunicaciones muestran anomalías diferentes. Los protagonistas observan piezas distintas de una crisis que parece demasiado coordinada para ser una coincidencia.</p><p class="available">32 páginas ilustradas · capítulo 1 completo.</p><button id="cardRead" class="primary">Leer capítulo</button></div>
     </article>
-    <div class="coming"><div><b>02</b><span>404</span></div><div><b>03</b><span>La prueba imposible</span></div><div><b>04</b><span>TECH GUARDIANS</span></div><div><b>05–24</b><span>Próximamente</span></div></div>
+    <div class="coming chapter-selectors">
+      <div><b>02</b><span>404</span><button class="primary" data-chapter="2">Leer capítulo 2</button></div>
+      <div><b>03</b><span>La prueba imposible</span><button class="primary" data-chapter="3">Leer capítulo 3</button></div>
+      <div><b>04</b><span>TECH GUARDIANS</span><button class="primary" data-chapter="4">Leer capítulo 4</button></div>
+      <div><b>05–24</b><span>Próximamente</span></div>
+    </div>
   </section>
+  <section class="transmedia" id="pelicula">
+    <div class="transmedia-head"><div><p class="eyebrow">EXPANSIÓN TRANSMEDIA · PRÓXIMAMENTE</p><h2>TECH GUARDIANS — La película</h2></div><span class="soon-badge">PRÓXIMAMENTE</span></div>
+    <div class="transmedia-card">
+      <img src="assets/images/promotional/pelicula.webp" alt="Imagen promocional de TECH GUARDIANS — La película, próximamente" loading="lazy" />
+      <div class="transmedia-copy"><h3>Una aventura tecnológica de escala global</h3><p>La adaptación cinematográfica de <strong>TECH GUARDIANS: El Código del Mundo</strong> está planteada como un largometraje animado de ciencia ficción y aventura tecnológica. La historia seguirá a seis especialistas que deben comprender los fallos imposibles de NEXUS mientras el misterio de EVA transforma una crisis técnica en una discusión sobre calidad, ética, personas y quién debe decidir el futuro de los sistemas.</p><p>La propuesta de Temporada 1 contempla una duración objetivo aproximada de <strong>125–135 minutos</strong>, preservando la colaboración multidisciplinaria, el impacto de los fallos en el mundo real, ORION como IA aliada pero falible y una narrativa comprensible incluso para público no técnico.</p><div class="feature-chips"><span>Ciencia ficción</span><span>Misterio tecnológico</span><span>Trabajo en equipo</span><span>IA y ciberseguridad</span><span>Impacto humano</span></div><p class="status-copy">🎬 <strong>Estado:</strong> concepto y planificación en desarrollo. Próximamente.</p></div>
+    </div>
+  </section>
+
+  <section class="transmedia alternate" id="videojuego">
+    <div class="transmedia-head"><div><p class="eyebrow">EXPERIENCIA INTERACTIVA · PRÓXIMAMENTE</p><h2>TECH GUARDIANS — El videojuego</h2></div><span class="soon-badge">PRÓXIMAMENTE</span></div>
+    <div class="transmedia-card">
+      <img src="assets/images/promotional/videojuego.webp" alt="Imagen promocional de TECH GUARDIANS — El videojuego, próximamente" loading="lazy" />
+      <div class="transmedia-copy"><h3>Investiga, analiza, resuelve y toma decisiones</h3><p>El videojuego trasladará el universo de TECH GUARDIANS a una experiencia narrativa e interactiva basada en <strong>exploración, investigación tecnológica, resolución de retos y toma de decisiones</strong>. El jugador podrá seguir incidentes de NEXUS, analizar evidencia y comprender cómo desarrollo, QA, inteligencia artificial, ciberseguridad, cloud/DevOps y accesibilidad se complementan para resolver problemas.</p><p>La experiencia busca convertir el conocimiento en parte de la jugabilidad: explorar escenarios, seguir solicitudes entre componentes, interpretar datos, descubrir patrones y afrontar consecuencias relacionadas con sistemas que afectan a personas y servicios del mundo real.</p><div class="feature-chips"><span>Exploración</span><span>Investigación</span><span>Puzles tecnológicos</span><span>Decisiones</span><span>Historia interactiva</span></div><p class="status-copy">🎮 <strong>Estado:</strong> concepto y diseño en desarrollo. Plataformas y fecha de lanzamiento por anunciar. Próximamente.</p></div>
+    </div>
+  </section>
+
 </main>
 
 <footer><div class="brand"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></div><p>Proyecto original · Manga digital · © 2026. Todos los derechos reservados.</p></footer>
@@ -59,7 +80,7 @@
   </div>
   <div class="reader-tools" aria-label="Herramientas de lectura">
     <button id="zoomOut" title="Alejar imagen">−</button><span class="zoom-value" id="zoomValue">100%</span><button id="zoomIn" title="Ampliar imagen">＋</button><button id="zoomReset">Restablecer</button>
-    <button id="toggleScript">📜 Guion</button>
+    <button id="toggleScript">📜 Guion</button><button id="prevChapterBtn" type="button">← Capítulo anterior</button><button id="nextChapterBtn" class="primary" type="button">Siguiente capítulo →</button>
 <button id="openPageVideoBtn" class="video-tool-btn" type="button" title="Ver video de esta página">▶ Video</button>
 <button id="backHomeBtn" class="home-tool-btn" type="button" title="Volver a la página principal">⌂ Inicio</button><span class="voice-status" id="voiceStatus">Narración en español lista</span>
   </div>

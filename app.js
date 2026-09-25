@@ -1,12 +1,12 @@
-const totalPages=32;
-const pages=['assets/images/chapter-01/page-01.webp','assets/images/chapter-01/page-02.webp','assets/images/chapter-01/page-03.webp','assets/images/chapter-01/page-04.webp','assets/images/chapter-01/page-05.webp','assets/images/chapter-01/page-06.webp','assets/images/chapter-01/page-07.webp','assets/images/chapter-01/page-08.webp','assets/images/chapter-01/page-09.webp','assets/images/chapter-01/page-10.webp','assets/images/chapter-01/page-11.webp','assets/images/chapter-01/page-12.webp','assets/images/chapter-01/page-13.webp','assets/images/chapter-01/page-14.webp','assets/images/chapter-01/page-15.webp','assets/images/chapter-01/page-16.webp','assets/images/chapter-01/page-17.webp','assets/images/chapter-01/page-18.webp','assets/images/chapter-01/page-19.webp','assets/images/chapter-01/page-20.webp','assets/images/chapter-01/page-21.webp','assets/images/chapter-01/page-22.webp','assets/images/chapter-01/page-23.webp','assets/images/chapter-01/page-24.webp','assets/images/chapter-01/page-25.webp','assets/images/chapter-01/page-26.webp','assets/images/chapter-01/page-27.webp','assets/images/chapter-01/page-28.webp','assets/images/chapter-01/page-29.webp','assets/images/chapter-01/page-30.webp','assets/images/chapter-01/page-31.webp','assets/images/chapter-01/page-32.webp'];
+let totalPages=32;
+let pages=['assets/images/chapter-01/page-01.webp','assets/images/chapter-01/page-02.webp','assets/images/chapter-01/page-03.webp','assets/images/chapter-01/page-04.webp','assets/images/chapter-01/page-05.webp','assets/images/chapter-01/page-06.webp','assets/images/chapter-01/page-07.webp','assets/images/chapter-01/page-08.webp','assets/images/chapter-01/page-09.webp','assets/images/chapter-01/page-10.webp','assets/images/chapter-01/page-11.webp','assets/images/chapter-01/page-12.webp','assets/images/chapter-01/page-13.webp','assets/images/chapter-01/page-14.webp','assets/images/chapter-01/page-15.webp','assets/images/chapter-01/page-16.webp','assets/images/chapter-01/page-17.webp','assets/images/chapter-01/page-18.webp','assets/images/chapter-01/page-19.webp','assets/images/chapter-01/page-20.webp','assets/images/chapter-01/page-21.webp','assets/images/chapter-01/page-22.webp','assets/images/chapter-01/page-23.webp','assets/images/chapter-01/page-24.webp','assets/images/chapter-01/page-25.webp','assets/images/chapter-01/page-26.webp','assets/images/chapter-01/page-27.webp','assets/images/chapter-01/page-28.webp','assets/images/chapter-01/page-29.webp','assets/images/chapter-01/page-30.webp','assets/images/chapter-01/page-31.webp','assets/images/chapter-01/page-32.webp'];
 
 /*
  Guion accesible completo para las páginas ilustradas 1–24.
  Incluye descripción de cada viñeta/acción y todos los textos hablados del guion técnico.
  Las páginas 8–14 fueron sincronizadas con las ilustraciones actualizadas.
 */
-const scripts=[
+const chapter1Scripts=[
 [{s:"TÍTULO",t:"TECH GUARDIANS — EL CÓDIGO DEL MUNDO. CAPÍTULO 1: EL DÍA QUE EL MUNDO SE DETUVO."},{s:"NARRADOR",t:"Año 2045."},{s:"NARRADOR",t:"El mundo no depende de una sola máquina."},{s:"NARRADOR",t:"Depende de millones de sistemas que aprendieron a trabajar juntos."},{s:"NEXUS",t:"Infraestructura digital internacional. Conectando personas, sistemas y oportunidades en todo el mundo."},{s:"HOSPITALES",t:"Tecnología que mejora la atención médica y salva vidas."},{s:"TRANSPORTE",t:"Ciudades más conectadas y un mundo en movimiento."},{s:"UNIVERSIDADES",t:"Conocimiento sin fronteras para nuevas generaciones."},{s:"EMPRESAS",t:"Innovación que impulsa soluciones para un futuro más sostenible."},{s:"HOGARES",t:"La tecnología nos acerca a las personas que más importan."},{s:"NARRADOR",t:"NEXUS está presente en cada aspecto de nuestra vida. Hace posible que todo funcione de manera más eficiente, segura e inclusiva."},{s:"NARRADOR",t:"Gracias a la tecnología, el mundo está más conectado que nunca."},{s:"PANTALLA",t:"NEXUS NODE 07. SYNC 99.98 %. Una lectura desciende brevemente a 99.41 % mientras el resto permanece estable."}],
 [{s:"NARRADOR",t:"Ciudades. Universidades. Hospitales. Transporte. Comunicaciones. Empresas."},{s:"NARRADOR",t:"Cada día, millones de personas utilizan servicios que trabajan juntos a través de NEXUS."},{s:"NARRADOR",t:"NEXUS conecta servicios que casi nadie nota... mientras funcionan."},{s:"NARRADOR",t:"Diferentes lugares. Un mismo propósito. Un mundo que funciona para las personas."},{s:"TRANSPORTE",t:"Las personas se mueven por la ciudad de forma más rápida, segura y conectada."},{s:"PANTALLA",t:"NEXUS TRANSIT. Identidad validada. Ruta confirmada. Sincronización activa."},{s:"HOSPITALES",t:"La tecnología permite una atención médica más precisa, oportuna y humana."},{s:"PANTALLA",t:"Expediente clínico sincronizado con NEXUS. Sincronización normal."},{s:"UNIVERSIDADES",t:"El conocimiento no tiene fronteras. Estudiantes y docentes de diferentes países colaboran en tiempo real."},{s:"PANTALLA",t:"Conexión global estable."},{s:"EMPRESAS",t:"La logística y la producción se mantienen en movimiento gracias a sistemas automatizados e inteligentes."},{s:"PANTALLA",t:"Centro logístico: recepción, clasificación, rutas optimizadas y envío. Ruta de paquete recalculada."},{s:"NARRADOR",t:"NEXUS integra ciudades, sistemas, organizaciones y personas en todo el mundo. Millones de servicios trabajan juntos para que la vida siga avanzando."},{s:"NARRADOR",t:"NEXUS conecta servicios que casi nadie nota... mientras funcionan."},{s:"PANTALLA",t:"TRANSIT: operación estable, SYNC +0.8 s. HEALTH: datos sincronizados, SYNC +1.0 s. EDU: conexión global, SYNC +0.7 s. LOGISTICS: operación normal, ruta recalculada."}],
 [{s:"NARRADOR",t:"En algún lugar del mundo, un centro de operaciones monitorea en tiempo real los servicios de NEXUS. Todo funciona con normalidad."},{s:"PANTALLA",t:"NEXUS — Infraestructura digital internacional. Sistemas totales: 1,482. 99.98 % en línea. Tráfico global: 24.7 Tbps. Latencia promedio: 182 ms. Servicios globales: operativos."},{s:"NARRADOR",t:"Un pequeño indicador cambia de verde a amarillo."},{s:"PANTALLA",t:"África — Nube y datos — 280 ms — ALERTA. Latencia normal: 80–150 ms. Estado: latencia elevada."},{s:"OPERADOR",t:"Latencia de 280 milisegundos. Probablemente un nodo saturado."},{s:"OPERADOR",t:"No hay otros servicios afectados. Seguimos monitoreando."},{s:"NARRADOR",t:"El indicador vuelve a verde."},{s:"OPERADOR",t:"Resuelto. La latencia volvió a los valores normales."},{s:"OPERADOR",t:"Parece que fue una sobrecarga temporal."},{s:"NARRADOR",t:"La primera anomalía duró menos de cuatro segundos."},{s:"NARRADOR",t:"Un evento pequeño. Apenas un cambio en la latencia. Nada más... por ahora."}],
@@ -41,6 +41,40 @@ const scripts=[
 [{s:"TÍTULO",t:"PÁGINA 32 — CLIFFHANGER: UN MENSAJE EN LA OSCURIDAD."},{s:"NARRADOR",t:"Durante años, NEXUS conectó al mundo."},{s:"NARRADOR",t:"Ese día, por primera vez, pareció responderle."},{s:"PANTALLA",t:"EL SISTEMA FUNCIONA..."},{s:"PANTALLA",t:">▌"},{s:"NARRADOR",t:"A veces, una respuesta es solo el comienzo."},{s:"RÓTULO",t:"CONTINUARÁ... Capítulo 2: 404."}]
 ];
 
+
+const chapters={
+  1:{title:'El día que el mundo se detuvo',pages:Array.from({length:32},(_,i)=>`assets/images/chapter-01/page-${String(i+1).padStart(2,'0')}.webp`),scripts:chapter1Scripts},
+  2:{title:'404',pages:['assets/images/chapter-02/page-01.webp'],scripts:[[{s:'NARRADOR',t:'El mensaje no continuó.'},{s:'LEO',t:'No hay más fragmentos.'},{s:'HANA',t:'Entonces no asumamos que terminó.'},{s:'MAYA',t:'Guardemos cada respuesta. Sin interpretar todavía.'},{s:'AKIRA',t:'Y revisemos qué cambió justo antes de que apareciera.'},{s:'DIRECCIÓN VISUAL',t:'Silencio, espacio negativo y reflejos del mensaje en los rostros. No completar la frase.'}]]},
+  3:{title:'La prueba imposible',pages:['assets/images/chapter-03/page-01.webp'],scripts:[[{s:'SISTEMA',t:'GET /nexus/message/next - 404 Not Found.'},{s:'NOAH',t:'La ruta no está publicada. Tampoco aparece en el gateway.'},{s:'AKIRA',t:'Y no existe en el repositorio.'},{s:'MAYA',t:'Entonces primero demostremos qué está ocurriendo. Sin suponer quién lo provoca.'},{s:'DIRECCIÓN VISUAL',t:'Retomar el mismo cursor del cierre anterior. Mantener el mensaje incompleto fuera de foco, como una presencia silenciosa.'}]]},
+  4:{title:'TECH GUARDIANS',pages:['assets/images/chapter-04/page-01.webp'],scripts:[[{s:'ESCENA',t:'09:00 UTC. La hora del mensaje del capítulo anterior llega. Los seis permanecen conectados desde ubicaciones distintas. Nadie ejecuta acciones sobre la ruta desconocida.'},{s:'NOAH',t:'Sin cambios de infraestructura.'},{s:'HANA',t:'Sin nuevos permisos ni procesos anómalos.'},{s:'MAYA',t:'Mantengan captura completa. Si ocurre algo, primero observamos.'},{s:'AKIRA',t:'Faltan diez segundos.'},{s:'DIRECCIÓN VISUAL',t:'Seis relojes sincronizados. La tensión proviene de esperar, no de una acción física.'}]]}
+};
+let currentChapter=1;
+let scripts=chapters[1].scripts;
+function loadChapter(n,page=0){
+  if(!chapters[n])return;
+  currentChapter=n; pages=chapters[n].pages; scripts=chapters[n].scripts; totalPages=pages.length; current=Math.max(0,Math.min(page,totalPages-1));
+  document.querySelector('.reader-bar > div:first-child b').textContent=`Capítulo ${n}`;
+  document.querySelector('.reader-bar > div:first-child span').textContent=chapters[n].title;
+  rebuildThumbs(); render(); updatePageVideoButton(); updateChapterNav();
+}
+function rebuildThumbs(){
+  if(!thumbs) return;
+  thumbs.innerHTML='';
+  pages.forEach((src,i)=>{
+    const img=document.createElement('img');
+    img.src=src;
+    img.alt=`Miniatura capítulo ${currentChapter}, página ${i+1}`;
+    img.loading='lazy';
+    img.classList.toggle('active',i===current);
+    img.addEventListener('click',()=>go(i));
+    thumbs.appendChild(img);
+  });
+}
+function updateChapterNav(){
+  const prev=document.getElementById('prevChapterBtn'), next=document.getElementById('nextChapterBtn');
+  if(prev){prev.disabled=!chapters[currentChapter-1];prev.textContent=chapters[currentChapter-1]?`← Capítulo ${currentChapter-1}`:'← Capítulo anterior';}
+  if(next){next.disabled=!chapters[currentChapter+1];next.textContent=chapters[currentChapter+1]?`Capítulo ${currentChapter+1} →`:'Siguiente capítulo →';}
+}
 const voiceProfiles={
 'NARRADOR':{rate:.88,pitch:.90},'ESCENA':{rate:.92,pitch:.96},'RÓTULO':{rate:.88,pitch:.86},
 'AKIRA':{rate:.98,pitch:.94},'MAYA':{rate:.94,pitch:1.08},'LEO':{rate:.97,pitch:.91},
@@ -65,7 +99,7 @@ function renderScript(){
     const tx=document.createElement('span');tx.className=(line.s==='NARRADOR'||line.s==='ESCENA')?'narrator':'';tx.textContent=line.t;
     d.append(sp,tx);scriptText.appendChild(d);
   });
-  document.querySelector('#scriptTitle').textContent=`Guion completo · página ${current+1}`;
+  document.querySelector('#scriptTitle').textContent=`Guion completo · capítulo ${currentChapter} · página ${current+1}`;
 }
 
 function applyZoom(){
@@ -75,7 +109,7 @@ function applyZoom(){
   stage.classList.toggle('zoomed',zoom>1);
 }
 function render(){
-  pageImage.src=pages[current];pageImage.alt=`TECH GUARDIANS — capítulo 1, página ${current+1}`;
+  pageImage.src=pages[current];pageImage.alt=`TECH GUARDIANS — capítulo ${currentChapter}, página ${current+1}`;
   pageLabel.textContent=`Página ${current+1} de ${totalPages}`;
   progress.style.width=`${((current+1)/totalPages)*100}%`;
   document.querySelectorAll('.thumbs img').forEach((x,i)=>x.classList.toggle('active',i===current));
@@ -87,10 +121,13 @@ function openReader(){reader.classList.add('open');reader.setAttribute('aria-hid
 function closeReader(){closePageVideo();dismissVideoPrompt();page1VideoAsked=false;reader.classList.remove('open');reader.setAttribute('aria-hidden','true');document.body.classList.remove('reader-open');}
 function go(n){current=Math.max(0,Math.min(totalPages-1,n));render();updatePageVideoButton();}
 
-pages.forEach((src,i)=>{const im=new Image();im.src=src;im.alt=`Miniatura página ${i+1}`;im.loading='lazy';im.onclick=()=>go(i);thumbs.appendChild(im)});
-['openReader','heroRead','cardRead'].forEach(id=>document.getElementById(id).onclick=openReader);
+rebuildThumbs();
+['openReader','heroRead','cardRead'].forEach(id=>document.getElementById(id).onclick=()=>{loadChapter(1);openReader();});
+document.querySelectorAll('[data-chapter]').forEach(btn=>btn.addEventListener('click',()=>{loadChapter(Number(btn.dataset.chapter));openReader();}));
+document.getElementById('prevChapterBtn')?.addEventListener('click',()=>{if(chapters[currentChapter-1])loadChapter(currentChapter-1,chapters[currentChapter-1].pages.length-1)});
+document.getElementById('nextChapterBtn')?.addEventListener('click',()=>{if(chapters[currentChapter+1])loadChapter(currentChapter+1,0)});
 document.getElementById('closeReader').onclick=closeReader;
-document.getElementById('prevPage').onclick=()=>go(current-1);document.getElementById('nextPage').onclick=()=>go(current+1);
+document.getElementById('prevPage').onclick=()=>{if(current===0&&chapters[currentChapter-1])loadChapter(currentChapter-1,chapters[currentChapter-1].pages.length-1);else go(current-1)};document.getElementById('nextPage').onclick=()=>{if(current===totalPages-1&&chapters[currentChapter+1])loadChapter(currentChapter+1,0);else go(current+1)};
 document.getElementById('fitToggle').onclick=()=>{fitWidth=!fitWidth;stage.classList.toggle('fit-width',fitWidth);document.getElementById('fitToggle').textContent=fitWidth?'Página':'Ajustar ancho';zoom=1;applyZoom();document.querySelector('.page-scroll')?.scrollTo({top:0,left:0});};
 document.getElementById('fullScreen').onclick=()=>{if(!document.fullscreenElement)reader.requestFullscreen?.();else document.exitFullscreen?.()};
 document.getElementById('zoomIn').onclick=()=>{zoom=Math.min(3,zoom+.25);applyZoom()};
