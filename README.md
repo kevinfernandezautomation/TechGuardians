@@ -113,3 +113,10 @@ Puede publicarse como sitio estático en GitHub Pages. Abra `index.html` para pr
 - Páginas 13–17 incorporadas con guion accesible.
 - Portada/inicio corregida para usar page-01.webp.
 - Página 2 enlazada al video https://youtu.be/lPzLLjLngvQ.
+
+
+## Actualización v16
+- Capítulo 1 ampliado de 17 a 24 páginas.
+- Páginas 18–24 incorporadas en WebP.
+- Guion accesible/transcripción agregado para cada página 18–24 en `app.js`.
+- Contador, progreso, miniaturas, navegación y voz ahora reconocen 24 páginas.
