@@ -116,7 +116,12 @@ Puede publicarse como sitio estático en GitHub Pages. Abra `index.html` para pr
 
 
 ## Actualización v16
-- Capítulo 1 ampliado de 17 a 24 páginas.
+- Capítulo 1 ampliado de 17 a 32 páginas.
 - Páginas 18–24 incorporadas en WebP.
 - Guion accesible/transcripción agregado para cada página 18–24 en `app.js`.
-- Contador, progreso, miniaturas, navegación y voz ahora reconocen 24 páginas.
+- Contador, progreso, miniaturas, navegación y voz ahora reconocen 32 páginas.
+
+
+## Actualización v18
+- Sustituidas las ilustraciones de las páginas 8 a 14 del capítulo 1.
+- Guion accesible de las páginas 8 a 14 sincronizado con el texto y contenido visual de cada página.
