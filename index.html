@@ -5,13 +5,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#07111f" />
   <meta name="description" content="TECH GUARDIANS: El Código del Mundo — lector online del manga de ciencia ficción y aventura tecnológica." />
-  <title>TECH GUARDIANS — Manga Online</title>
+  <title>TECH GUARDIANS — Manga Online | El Código del Mundo</title>
+
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="TECH GUARDIANS" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TECH GUARDIANS" />
+  <meta property="og:title" content="TECH GUARDIANS — Manga Online | El Código del Mundo" />
+  <meta property="og:description" content="Historia original de ciencia ficción, calidad de software, IA, ciberseguridad y tecnología." />
+  <meta property="og:image" content="assets/images/promotional/videojuego.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TECH GUARDIANS — Manga Online | El Código del Mundo" />
+  <meta name="twitter:description" content="TECH GUARDIANS: El Código del Mundo." />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"TECH GUARDIANS: El Código del Mundo","inLanguage":["es","en","pt","ja"],"genre":["Science fiction","Technology","Adventure"]}</script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="topbar">
   <a class="brand" href="#inicio" aria-label="TECH GUARDIANS, inicio"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></a>
-  <nav><a href="#historia">Historia</a><a href="#capitulos">Capítulos</a><a href="#pelicula">Película</a><a href="#videojuego">Videojuego</a><button id="openReader" class="primary">Leer ahora</button></nav>
+  <nav><a href="#historia" data-i18n="story">Historia</a><a href="#capitulos" data-i18n="chapters">Capítulos</a><a href="#pelicula" data-i18n="movie">Película</a><a href="videojuego.html" data-i18n="game">Videojuego</a><button id="openReader" class="primary">Leer ahora</button><a href="#precios" data-i18n="pricing">Precios</a></nav>
 </header>
 
 <main>
@@ -55,14 +67,10 @@
     </div>
   </section>
 
-  <section class="transmedia alternate" id="videojuego">
-    <div class="transmedia-head"><div><p class="eyebrow">EXPERIENCIA INTERACTIVA · PRÓXIMAMENTE</p><h2>TECH GUARDIANS — El videojuego</h2></div><span class="soon-badge">PRÓXIMAMENTE</span></div>
-    <div class="transmedia-card">
-      <img src="assets/images/promotional/videojuego.webp" alt="Imagen promocional de TECH GUARDIANS — El videojuego, próximamente" loading="lazy" />
-      <div class="transmedia-copy"><h3>Investiga, analiza, resuelve y toma decisiones</h3><p>El videojuego trasladará el universo de TECH GUARDIANS a una experiencia narrativa e interactiva basada en <strong>exploración, investigación tecnológica, resolución de retos y toma de decisiones</strong>. El jugador podrá seguir incidentes de NEXUS, analizar evidencia y comprender cómo desarrollo, QA, inteligencia artificial, ciberseguridad, cloud/DevOps y accesibilidad se complementan para resolver problemas.</p><p>La experiencia busca convertir el conocimiento en parte de la jugabilidad: explorar escenarios, seguir solicitudes entre componentes, interpretar datos, descubrir patrones y afrontar consecuencias relacionadas con sistemas que afectan a personas y servicios del mundo real.</p><div class="feature-chips"><span>Exploración</span><span>Investigación</span><span>Puzles tecnológicos</span><span>Decisiones</span><span>Historia interactiva</span></div><p class="status-copy">🎮 <strong>Estado:</strong> concepto y diseño en desarrollo. Plataformas y fecha de lanzamiento por anunciar. Próximamente.</p></div>
-    </div>
-  </section>
 
+
+
+<section class="pricing" id="precios"><p class="eyebrow" data-i18n="pricing">Precios</p><h2 data-i18n="plans">Elija su acceso</h2><p class="pricing-lead" data-i18n="planLead">Acceso digital a TECH GUARDIANS y sus contenidos publicados.</p><div class="pricing-grid"><article><span data-i18n="monthly">Mensual</span><strong>US$1</strong><small data-i18n="perMonth">por mes</small><button class="primary pay-btn" data-i18n="pay">Pagar</button></article><article class="featured"><span data-i18n="annual">Anual</span><strong>US$10</strong><small data-i18n="perYear">por año</small><button class="primary pay-btn" data-i18n="pay">Pagar</button></article></div></section>
 </main>
 
 <footer><div class="brand"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></div><p>Proyecto original · Manga digital · © 2026. Todos los derechos reservados.</p></footer>
@@ -87,7 +95,7 @@
   <aside class="script-panel" id="scriptPanel" hidden><div class="script-head"><div><h3 id="scriptTitle">Guion</h3><div class="script-note">Guion accesible completo de la página: acciones, narración, rótulos y diálogos. El guion accesible contiene el texto de cada página, incluyendo narración, rótulos, pantallas y diálogos.</div></div><button id="closeScript" aria-label="Cerrar guion">✕</button></div><div id="scriptText"></div></aside>
   <div class="thumbs" id="thumbs"></div>
 </div>
-<script src="app.js"></script>
+
 
 <div id="videoPrompt" class="video-prompt" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="videoPromptTitle">
   <div class="video-prompt-card">
@@ -115,5 +123,8 @@
   </div>
 </div>
 
+
+<script src="site.js" defer></script>
+<script src="app.js" defer></script>
 </body>
 </html>

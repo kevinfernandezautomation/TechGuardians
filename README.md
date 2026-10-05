@@ -122,6 +122,6 @@ Puede publicarse como sitio estático en GitHub Pages. Abra `index.html` para pr
 - Contador, progreso, miniaturas, navegación y voz ahora reconocen 32 páginas.
 
 
-## Actualización v18
+## Actualización v25
 - Sustituidas las ilustraciones de las páginas 8 a 14 del capítulo 1.
 - Guion accesible de las páginas 8 a 14 sincronizado con el texto y contenido visual de cada página.
