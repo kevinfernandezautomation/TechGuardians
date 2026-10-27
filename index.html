@@ -63,14 +63,14 @@
     <div class="transmedia-head"><div><p class="eyebrow">EXPANSIÓN TRANSMEDIA · PRÓXIMAMENTE</p><h2>TECH GUARDIANS — La película</h2></div><span class="soon-badge">PRÓXIMAMENTE</span></div>
     <div class="transmedia-card">
       <img src="assets/images/promotional/pelicula.webp" alt="Imagen promocional de TECH GUARDIANS — La película, próximamente" loading="lazy" />
-      <div class="transmedia-copy"><h3>Una aventura tecnológica de escala global</h3><p>La adaptación cinematográfica de <strong>TECH GUARDIANS: El Código del Mundo</strong> está planteada como un largometraje animado de ciencia ficción y aventura tecnológica. La historia seguirá a seis especialistas que deben comprender los fallos imposibles de NEXUS mientras el misterio de EVA transforma una crisis técnica en una discusión sobre calidad, ética, personas y quién debe decidir el futuro de los sistemas.</p><p>La propuesta de Temporada 1 contempla una duración objetivo aproximada de <strong>125–135 minutos</strong>, preservando la colaboración multidisciplinaria, el impacto de los fallos en el mundo real, ORION como IA aliada pero falible y una narrativa comprensible incluso para público no técnico.</p><div class="feature-chips"><span>Ciencia ficción</span><span>Misterio tecnológico</span><span>Trabajo en equipo</span><span>IA y ciberseguridad</span><span>Impacto humano</span></div><p class="status-copy">🎬 <strong>Estado:</strong> concepto y planificación en desarrollo. Próximamente.</p></div>
+      <div class="transmedia-copy"><h3>Una aventura tecnológica de escala global</h3><p>La adaptación cinematográfica de <strong>TECH GUARDIANS: El Código del Mundo</strong> está planteada como un largometraje animado de ciencia ficción y aventura tecnológica. La historia seguirá a seis especialistas que deben comprender los fallos imposibles de NEXUS mientras el misterio de EVA transforma una crisis técnica en una discusión sobre calidad, ética, personas y quién debe decidir el futuro de los sistemas.</p><p>La propuesta de Temporada 1 contempla una duración objetivo aproximada de <strong>125–135 minutos</strong>, preservando la colaboración multidisciplinaria, el impacto de los fallos en el mundo real, ORION como IA aliada pero falible y una narrativa comprensible incluso para público no técnico.</p><div class="feature-chips"><span>Ciencia ficción</span><span>Misterio tecnológico</span><span>Trabajo en equipo</span><span>IA y ciberseguridad</span><span>Impacto humano</span></div><p class="status-copy">🎬 <strong>Estado:</strong> concepto y planificación en desarrollo. Próximamente.</p><div class="trailer-actions"><button type="button" id="openMovieTrailer" class="primary" aria-haspopup="dialog">▶ Ver tráiler</button></div></div>
     </div>
   </section>
 
 
 
 
-<section class="pricing" id="precios"><p class="eyebrow" data-i18n="pricing">Precios</p><h2 data-i18n="plans">Elija su acceso</h2><p class="pricing-lead" data-i18n="planLead">Acceso digital a TECH GUARDIANS y sus contenidos publicados.</p><div class="pricing-grid"><article><span data-i18n="monthly">Mensual</span><strong>US$1</strong><small data-i18n="perMonth">por mes</small><button class="primary pay-btn" data-i18n="pay">Pagar</button></article><article class="featured"><span data-i18n="annual">Anual</span><strong>US$10</strong><small data-i18n="perYear">por año</small><button class="primary pay-btn" data-i18n="pay">Pagar</button></article></div></section>
+<section class="pricing" id="precios"><p class="eyebrow" data-i18n="pricing">Precios</p><h2 data-i18n="plans">Elija su acceso</h2><p class="pricing-lead" data-i18n="planLead">Acceso digital a TECH GUARDIANS y sus contenidos publicados.</p><div class="pricing-grid pricing-unified"><article class="featured"><label for="accessPlan">Seleccione su plan de acceso</label><select id="accessPlan" aria-label="Plan de acceso"><option value="monthly">Mensual — US$1 por mes</option><option value="annual">Anual — US$9.99 por año</option></select><strong id="accessPrice">US$1</strong><small id="accessPeriod">por mes</small><button class="primary pay-btn" data-i18n="pay">Pagar</button></article></div></section>
 </main>
 
 <footer><div class="brand"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></div><p>Proyecto original · Manga digital · © 2026. Todos los derechos reservados.</p></footer>
@@ -90,7 +90,7 @@
     <button id="zoomOut" title="Alejar imagen">−</button><span class="zoom-value" id="zoomValue">100%</span><button id="zoomIn" title="Ampliar imagen">＋</button><button id="zoomReset">Restablecer</button>
     <button id="toggleScript">📜 Guion</button><button id="prevChapterBtn" type="button">← Capítulo anterior</button><button id="nextChapterBtn" class="primary" type="button">Siguiente capítulo →</button>
 <button id="openPageVideoBtn" class="video-tool-btn" type="button" title="Ver video de esta página">▶ Video</button>
-<button id="backHomeBtn" class="home-tool-btn" type="button" title="Volver a la página principal">⌂ Inicio</button><span class="voice-status" id="voiceStatus">Narración en español lista</span>
+<button id="backHomeBtn" class="home-tool-btn" type="button" title="Volver a la página principal">⌂ Inicio</button><span class="voice-status" id="voiceStatus" aria-live="polite"></span>
   </div>
   <aside class="script-panel" id="scriptPanel" hidden><div class="script-head"><div><h3 id="scriptTitle">Guion</h3><div class="script-note">Guion accesible completo de la página: acciones, narración, rótulos y diálogos. El guion accesible contiene el texto de cada página, incluyendo narración, rótulos, pantallas y diálogos.</div></div><button id="closeScript" aria-label="Cerrar guion">✕</button></div><div id="scriptText"></div></aside>
   <div class="thumbs" id="thumbs"></div>
@@ -124,6 +124,15 @@
 </div>
 
 
+
+<div id="movieTrailerModal" class="movie-trailer-modal" hidden role="dialog" aria-modal="true" aria-labelledby="movieTrailerTitle" aria-hidden="true">
+ <div class="movie-trailer-card">
+  <div class="movie-trailer-heading"><h2 id="movieTrailerTitle">TECH GUARDIANS · Tráiler</h2><button type="button" id="closeMovieTrailer" aria-label="Cerrar tráiler">✕</button></div>
+  <div class="movie-trailer-frame"><iframe id="movieTrailerFrame" title="Tráiler oficial TECH GUARDIANS en YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+  <p class="trailer-external">¿No se reproduce? <a href="https://youtu.be/asQC8_5kcZE" target="_blank" rel="noopener noreferrer">Ver el tráiler en YouTube</a></p>
+ </div>
+</div>
+<script src="trailer.js" defer></script>
 <script src="site.js" defer></script>
 <script src="app.js" defer></script>
 </body>

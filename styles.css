@@ -109,3 +109,36 @@
 :root[data-theme="light"] body{background:linear-gradient(#eef7ff,#fff 35%,#f4f8fc);color:var(--text)}
 :root[data-theme="light"] .topbar{background:rgba(255,255,255,.92);border-color:#c8d9e7}:root[data-theme="light"] .brand{color:#07111f}:root[data-theme="light"] .topbar nav a{color:#1e3549}:root[data-theme="light"] .story-copy,:root[data-theme="light"] .chapter-card p,:root[data-theme="light"] .transmedia-copy p{color:#40596d}
 .site-tools{position:fixed;right:14px;bottom:14px;z-index:250;display:flex;gap:7px;padding:7px;border:1px solid var(--line);border-radius:14px;background:var(--panel);box-shadow:0 10px 40px #0005}.site-tools button,.site-tools select,.a11y-panel button{border:1px solid var(--line);border-radius:9px;background:var(--panel2);color:var(--text);padding:8px 10px;cursor:pointer}.a11y-panel{position:fixed;right:14px;bottom:70px;z-index:251;width:220px;padding:12px;display:grid;gap:8px;border:1px solid var(--line);border-radius:14px;background:var(--panel);box-shadow:0 15px 50px #0008}.a11y-panel[hidden]{display:none}.a11y-font{font-size:120%}.a11y-contrast{filter:contrast(1.25)}.a11y-links a{text-decoration:underline!important;text-decoration-thickness:3px!important}.a11y-motion *{animation:none!important;transition:none!important;scroll-behavior:auto!important}*:focus-visible{outline:3px solid var(--cyan)!important;outline-offset:3px}.pricing{max-width:var(--max);margin:auto;padding:80px 24px;border-top:1px solid var(--line);text-align:center}.pricing-lead{color:var(--muted)}.pricing-grid{max-width:720px;margin:30px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.pricing-grid article{display:grid;gap:10px;padding:30px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}.pricing-grid article.featured{box-shadow:0 0 0 2px var(--cyan),0 20px 60px #0004}.pricing-grid strong{font-size:3rem}.pricing-grid small{color:var(--muted);margin-bottom:10px}@media(max-width:720px){.pricing-grid{grid-template-columns:1fr}.site-tools span{display:none}.topbar nav{gap:10px;flex-wrap:wrap}.topbar{align-items:flex-start}}
+
+/* v26: tráiler cinematográfico */
+.trailer-actions{display:flex;margin-top:20px}.trailer-actions .primary{font-size:1.05rem;padding:14px 25px}.movie-trailer-modal[hidden],.movie-trailer-pending[hidden],#movieTrailerVideo[hidden]{display:none!important}.movie-trailer-modal{position:fixed;inset:0;z-index:3500;background:rgba(0,4,14,.92);display:grid;place-items:center;padding:18px}.movie-trailer-card{width:min(94vw,960px);background:#071525;border:1px solid #1d8bd0;border-radius:16px;overflow:hidden;box-shadow:0 25px 90px #000}.movie-trailer-heading{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;gap:12px}.movie-trailer-heading h2{font-size:clamp(1.1rem,2.5vw,1.65rem);margin:0}.movie-trailer-heading button{background:#10283f;color:#fff;border:1px solid #3d6987;border-radius:8px;padding:8px 12px;cursor:pointer}.movie-trailer-card video{width:100%;max-height:75vh;display:block}.movie-trailer-pending{text-align:center;padding:0 0 25px}.movie-trailer-pending img{display:block;width:100%;max-height:55vh;object-fit:contain}.movie-trailer-pending p{font-size:1.25rem;font-weight:800;margin:18px 12px 7px}.movie-trailer-pending small{color:#a9c4d9}
+
+.pricing-grid.pricing-unified{grid-template-columns:minmax(0,440px);justify-content:center}.pricing-unified select{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);color:var(--text);font:inherit}.pricing-unified label{font-weight:700}
+
+/* v28: tema claro aplicado a toda la interfaz de lectura, no a las ilustraciones originales */
+:root[data-theme="light"] .reader{background:#eef5fc;color:#10263b}
+:root[data-theme="light"] .reader-bar{background:#fff;border-bottom-color:#c5d7e7;color:#10263b}
+:root[data-theme="light"] .reader-bar span{color:#50687c}
+:root[data-theme="light"] .reader-actions button,
+:root[data-theme="light"] .reader-tools button{background:#fff;color:#153b5b;border-color:#b5cadd}
+:root[data-theme="light"] .reader-actions button:hover,
+:root[data-theme="light"] .reader-tools button:hover{background:#dcecf9;color:#082a4a}
+:root[data-theme="light"] .reader-stage{background:linear-gradient(135deg,#f8fbff,#e5f0fa)}
+:root[data-theme="light"] .reader-stage figure{background:transparent}
+:root[data-theme="light"] .reader-stage img{box-shadow:0 10px 32px #24445c35}
+:root[data-theme="light"] .reader-stage figcaption{color:#415c70}
+:root[data-theme="light"] .nav{color:#386b91}
+:root[data-theme="light"] .nav:hover{background:#dcecf9;color:#102e47}
+:root[data-theme="light"] .thumbs{background:#fff;border-top-color:#c5d7e7}
+:root[data-theme="light"] .thumbs img{opacity:.7}
+:root[data-theme="light"] .thumbs img.active{opacity:1;border-color:#087bb3}
+:root[data-theme="light"] .progress{background:#d0e0ec}
+:root[data-theme="light"] .reader-tools{background:#f4f9fe;color:#10263b;border-color:#c5d7e7}
+:root[data-theme="light"] .reader-tools select,
+:root[data-theme="light"] .reader-tools input{background:#fff;color:#10263b;border-color:#b5cadd}
+body.trailer-open{overflow:hidden}
+.movie-trailer-frame{position:relative;width:100%;aspect-ratio:16/9;background:#000}
+.movie-trailer-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.trailer-external{text-align:center;margin:0;padding:10px;color:#d5e9f8;font-size:.9rem}
+.trailer-external a{color:#55d8ff;text-decoration:underline}
+@media(max-width:600px){.movie-trailer-modal{padding:10px}.movie-trailer-card{width:100%}}

@@ -20,3 +20,5 @@ panel.addEventListener('click',e=>{let k=e.target.dataset.a11y;if(!k)return;if(k
 applyLang();
 D.querySelectorAll('.pay-btn').forEach(b=>b.addEventListener('click',()=>alert(t('checkout'))));
 })();
+// Selector unificado de planes.
+(()=>{const sel=document.getElementById('accessPlan'),price=document.getElementById('accessPrice'),period=document.getElementById('accessPeriod');if(!sel)return;sel.addEventListener('change',()=>{const annual=sel.value==='annual';price.textContent=annual?'US$9.99':'US$1';period.textContent=annual?'por año':'por mes';});})();

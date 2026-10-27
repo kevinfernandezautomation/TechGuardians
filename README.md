@@ -125,3 +125,15 @@ Puede publicarse como sitio estático en GitHub Pages. Abra `index.html` para pr
 ## Actualización v25
 - Sustituidas las ilustraciones de las páginas 8 a 14 del capítulo 1.
 - Guion accesible de las páginas 8 a 14 sincronizado con el texto y contenido visual de cada página.
+
+
+## Actualización v26
+- Capítulo 2: páginas 13–16 integradas al lector y guiones accesibles.
+- Película: botón «Ver tráiler» con ventana modal. Colocar assets/video/trailer.mp4 para activar reproducción; si no existe, se muestra «Próximamente».
+
+Actualización v27: capítulo 2 completo (22 páginas); selector único de acceso mensual US$1 o anual US$9.99; texto inicial de narración retirado.
+
+
+## Actualización v28
+- El modo claro ahora cubre el fondo, navegación, controles y miniaturas del lector de capítulos; las imágenes del manga permanecen intactas.
+- El botón Ver tráiler abre el video oficial https://youtu.be/asQC8_5kcZE en un reproductor YouTube incrustado, con enlace alternativo y cierre que detiene la reproducción.

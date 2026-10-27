@@ -1,0 +1,1 @@
+Coloque el video final en assets/video/trailer.mp4. El botón Ver tráiler lo mostrará automáticamente. Hasta entonces se presenta el aviso Próximamente.
