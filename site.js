@@ -21,4 +21,4 @@ applyLang();
 D.querySelectorAll('.pay-btn').forEach(b=>b.addEventListener('click',()=>alert(t('checkout'))));
 })();
 // Selector unificado de planes.
-(()=>{const sel=document.getElementById('accessPlan'),price=document.getElementById('accessPrice'),period=document.getElementById('accessPeriod');if(!sel)return;sel.addEventListener('change',()=>{const annual=sel.value==='annual';price.textContent=annual?'US$9.99':'US$1';period.textContent=annual?'por año':'por mes';});})();
+(()=>{const choices=[...document.querySelectorAll('input[name="accessPlan"]')],price=document.getElementById('accessPrice'),period=document.getElementById('accessPeriod');if(!choices.length||!price||!period)return;const plans={monthly:['US$1','por mes'],annual:['US$9.99','por año'],royalty:['US$19.99','incluye 1 año adicional de acceso']};function update(){const selected=choices.find(c=>c.checked)?.value||'monthly';const data=plans[selected];price.textContent=data[0];period.textContent=data[1];choices.forEach(c=>c.closest('.plan-choice')?.classList.toggle('selected',c.checked));}choices.forEach(c=>c.addEventListener('change',update));update();})();

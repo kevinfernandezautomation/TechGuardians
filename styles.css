@@ -142,3 +142,18 @@ body.trailer-open{overflow:hidden}
 .trailer-external{text-align:center;margin:0;padding:10px;color:#d5e9f8;font-size:.9rem}
 .trailer-external a{color:#55d8ff;text-decoration:underline}
 @media(max-width:600px){.movie-trailer-modal{padding:10px}.movie-trailer-card{width:100%}}
+
+/* v29: enlace directo al tráiler y planes con selección radial centrada */
+.trailer-youtube-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;cursor:pointer;font-size:1.05rem;padding:14px 25px;border-radius:10px}
+.pricing-grid.pricing-unified{display:flex;justify-content:center;align-items:stretch;max-width:760px;margin:30px auto 0}
+.pricing-grid.pricing-unified article{width:min(100%,520px);margin-inline:auto;text-align:center;justify-items:center;box-sizing:border-box}
+.pricing-unified #accessPlanTitle{margin:0;font-size:1.2rem}
+.pricing-unified .plan-options{border:0;padding:0;margin:12px 0;width:100%;display:grid;gap:12px;min-width:0}
+.pricing-unified .plan-choice{display:flex;align-items:center;gap:14px;padding:14px 16px;text-align:left;border:1px solid var(--line);border-radius:12px;background:var(--panel2);cursor:pointer;width:100%;box-sizing:border-box;transition:border-color .2s,box-shadow .2s}
+.pricing-unified .plan-choice.selected,.pricing-unified .plan-choice:has(input:checked){border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan)}
+.pricing-unified .plan-choice input[type=radio]{width:21px;height:21px;min-width:21px;accent-color:var(--cyan);cursor:pointer}
+.pricing-unified .plan-choice-text{display:grid;gap:4px;min-width:0}
+.pricing-unified .plan-choice-text b{font-size:1rem;color:var(--text)}
+.pricing-unified .plan-choice-text small{margin:0;color:var(--muted);font-size:.9rem}
+.pricing-unified .pay-btn{width:min(100%,320px)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
