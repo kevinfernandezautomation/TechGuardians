@@ -23,7 +23,7 @@
 <body>
 <header class="topbar">
   <a class="brand" href="#inicio" aria-label="TECH GUARDIANS, inicio"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></a>
-  <nav><a href="#historia" data-i18n="story">Historia</a><a href="#capitulos" data-i18n="chapters">Capítulos</a><a href="#pelicula" data-i18n="movie">Película</a><a href="videojuego.html" data-i18n="game">Videojuego</a><button id="openReader" class="primary">Leer ahora</button><a href="#precios" data-i18n="pricing">Precios</a></nav>
+  <button class="mobile-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button><nav id="site-navigation"><a href="#historia" data-i18n="story">Historia</a><a href="#capitulos" data-i18n="chapters">Capítulos</a><a href="#pelicula" data-i18n="movie">Película</a><a href="videojuego.html" data-i18n="game">Videojuego</a><button id="openReader" class="primary">Leer ahora</button><a href="#precios" data-i18n="pricing">Precios</a></nav>
 </header>
 
 <main>
@@ -50,13 +50,11 @@
     <p class="eyebrow">TEMPORADA 1 · ARCO I: EL PRIMER FALLO</p><h2>Capítulos</h2>
     <article class="chapter-card">
       <img src="assets/images/chapter-01/page-01.webp?v=17" alt="Capítulo 1" />
-      <div><span class="badge">DISPONIBLE · VISTA PREVIA</span><h3>01 — El día que el mundo se detuvo</h3><p>NEXUS comienza a fallar. Hospitales, transporte, universidades y comunicaciones muestran anomalías diferentes. Los protagonistas observan piezas distintas de una crisis que parece demasiado coordinada para ser una coincidencia.</p><p class="available">32 páginas ilustradas · capítulo 1 completo.</p><button id="cardRead" class="primary">Leer capítulo</button></div>
+      <div><span class="badge">DISPONIBLE · VISTA PREVIA</span><h3>01 — El día que el mundo se detuvo</h3><p>NEXUS comienza a fallar. Hospitales, transporte, universidades y comunicaciones muestran anomalías diferentes. Los protagonistas observan piezas distintas de una crisis que parece demasiado coordinada para ser una coincidencia.</p><p class="available">32 páginas ilustradas.</p><button id="cardRead" class="primary">Leer capítulo</button></div>
     </article>
     <div class="coming chapter-selectors">
       <div><b>02</b><span>404</span><button class="primary" data-chapter="2">Leer capítulo 2</button></div>
-      <div><b>03</b><span>La prueba imposible</span><button class="primary" data-chapter="3">Leer capítulo 3</button></div>
-      <div><b>04</b><span>TECH GUARDIANS</span><button class="primary" data-chapter="4">Leer capítulo 4</button></div>
-      <div><b>05–24</b><span>Próximamente</span></div>
+      <div><b>03–24</b><span>Próximamente</span></div>
     </div>
   </section>
   <section class="transmedia" id="pelicula">
