@@ -8,7 +8,7 @@ const dict={
 };
 let lang=localStorage.getItem('tg-lang')||'es';
 function t(k){return (dict[lang]||dict.es)[k]||k}
-function applyLang(){root.lang=lang; D.querySelectorAll('[data-i18n]').forEach(x=>x.textContent=t(x.dataset.i18n)); const sel=D.querySelector('#langSelect');if(sel)sel.value=lang;localStorage.setItem('tg-lang',lang)}
+function applyLang(){root.lang=lang; const animeButton=D.querySelector('[data-anime-label]');if(animeButton)animeButton.textContent=({es:'Ver anime',en:'Watch anime',pt:'Ver anime',ja:'アニメを見る'}[lang]||'Ver anime'); D.querySelectorAll('[data-i18n]').forEach(x=>x.textContent=t(x.dataset.i18n)); const sel=D.querySelector('#langSelect');if(sel)sel.value=lang;localStorage.setItem('tg-lang',lang)}
 function setTheme(v){root.dataset.theme=v;localStorage.setItem('tg-theme',v)}
 setTheme(localStorage.getItem('tg-theme')||'dark');
 const tools=D.createElement('div');tools.className='site-tools';tools.innerHTML=`<button id="themeToggle" aria-label="${t('theme')}" title="${t('theme')}">◐</button><button id="a11yToggle" aria-expanded="false" aria-controls="a11yPanel">♿ <span data-i18n="access">${t('access')}</span></button><select id="langSelect" aria-label="Idioma"><option value="es">ES</option><option value="en">EN</option><option value="pt">PT</option><option value="ja">日本語</option></select>`;(D.querySelector('.topbar')||D.body).append(tools);

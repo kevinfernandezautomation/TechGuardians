@@ -23,7 +23,7 @@
 <body>
 <header class="topbar">
   <a class="brand" href="#inicio" aria-label="TECH GUARDIANS, inicio"><span>TECH GUARDIANS</span><small>EL CÓDIGO DEL MUNDO</small></a>
-  <button class="mobile-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button><nav id="site-navigation"><a href="#historia" data-i18n="story">Historia</a><a href="#capitulos" data-i18n="chapters">Capítulos</a><a href="#pelicula" data-i18n="movie">Película</a><a href="videojuego.html" data-i18n="game">Videojuego</a><button id="openReader" class="primary">Leer ahora</button><a href="#precios" data-i18n="pricing">Precios</a></nav>
+  <button class="mobile-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button><nav id="site-navigation"><a href="#historia" data-i18n="story">Historia</a><a href="#capitulos" data-i18n="chapters">Capítulos</a><a href="#pelicula" data-i18n="movie">Película</a><a href="videojuego.html" data-i18n="game">Videojuego</a><button id="openReader" class="primary" data-anime-label="1">Ver anime</button><a href="precios.html" data-i18n="pricing">Precios</a></nav>
 </header>
 
 <main>
@@ -43,18 +43,21 @@
     <div class="story-copy">
       <p>TECH GUARDIANS sigue a Akira, Maya, Leo, Hana, Noah y Sofia, especialistas en desarrollo de software, calidad, inteligencia artificial, ciberseguridad, cloud/DevOps y experiencia de usuario. No tienen superpoderes: investigan, prueban, discuten y construyen soluciones mientras una crisis digital de escala internacional pone a prueba el mundo que la humanidad creó.</p>
       <p>NEXUS no es una sola inteligencia artificial, sino una infraestructura global formada por sistemas conectados durante décadas. Detrás de las anomalías existe un misterio que obligará a los protagonistas a preguntarse no solo cómo funciona la tecnología, sino quién debe controlarla y qué significa realmente construir un sistema de calidad.</p>
+      <div class="story-actions"><a class="primary" href="https://youtu.be/8UsUCh8GWKc" target="_blank" rel="noopener noreferrer">▶ Conocer historia</a></div>
     </div>
   </section>
 
   <section class="chapters" id="capitulos">
     <p class="eyebrow">TEMPORADA 1 · ARCO I: EL PRIMER FALLO</p><h2>Capítulos</h2>
-    <article class="chapter-card">
-      <img src="assets/images/chapter-01/page-01.webp?v=17" alt="Capítulo 1" />
-      <div><span class="badge">DISPONIBLE · VISTA PREVIA</span><h3>01 — El día que el mundo se detuvo</h3><p>NEXUS comienza a fallar. Hospitales, transporte, universidades y comunicaciones muestran anomalías diferentes. Los protagonistas observan piezas distintas de una crisis que parece demasiado coordinada para ser una coincidencia.</p><p class="available">32 páginas ilustradas.</p><button id="cardRead" class="primary">Leer capítulo</button></div>
-    </article>
-    <div class="coming chapter-selectors">
-      <div><b>02</b><span>404</span><button class="primary" data-chapter="2">Leer capítulo 2</button></div>
-      <div><b>03–24</b><span>Próximamente</span></div>
+    <div class="chapter-carousel" aria-label="Carrusel de capítulos" aria-roledescription="carrusel">
+      <div class="chapter-slides" id="chapterSlides">
+        <article class="chapter-slide" aria-label="Capítulo 1" aria-hidden="false"><img src="assets/images/chapter-01/page-01.webp" alt="Primera página del capítulo 1" loading="lazy"><div><span class="badge">DISPONIBLE · VISTA PREVIA</span><h3>01 — El día que el mundo se detuvo</h3><p>NEXUS comienza a fallar en hospitales, transporte y comunicaciones. Seis especialistas investigan una crisis global.</p><p class="available">32 páginas ilustradas</p><button class="primary" id="cardRead">Leer capítulo 1</button></div></article>
+        <article class="chapter-slide" aria-label="Capítulo 2" aria-hidden="true" hidden><img src="assets/images/chapter-02/page-01.webp" alt="Primera página del capítulo 2" loading="lazy"><div><span class="badge">DISPONIBLE</span><h3>02 — 404</h3><p>La investigación continúa: los protagonistas siguen las pistas de un error imposible y buscan respuestas.</p><button class="primary" data-chapter="2">Leer capítulo 2</button></div></article>
+        <article class="chapter-slide" aria-label="Capítulo 3" aria-hidden="true" hidden><img src="assets/images/chapter-03/page-01.webp" alt="Vista previa del capítulo 3" loading="lazy"><div><span class="badge">VISTA PREVIA</span><h3>03 — La prueba imposible</h3><p>Un mensaje misterioso abre nuevas preguntas sobre la infraestructura NEXUS.</p><button class="primary" data-chapter="3">Ver vista previa</button></div></article>
+        <article class="chapter-slide coming-slide" aria-label="Próximamente" aria-hidden="true" hidden><div class="coming-visual" aria-hidden="true">✦</div><div><span class="badge">PRÓXIMAMENTE</span><h3>03–24 Próximamente</h3><p>Más historias, investigaciones y desafíos tecnológicos están en preparación.</p></div></article>
+      </div>
+      <div class="chapter-pagination"><button type="button" id="chapterPrev" aria-label="Capítulo anterior">← Anterior</button><span id="chapterPosition" aria-live="polite">1 de 4</span><button type="button" id="chapterNext" aria-label="Capítulo siguiente">Siguiente →</button></div>
+      <div class="chapter-dots" role="group" aria-label="Seleccionar página del carrusel"><button aria-label="Ver tarjeta 1" aria-current="true" data-slide="0">1</button><button aria-label="Ver tarjeta 2" data-slide="1">2</button><button aria-label="Ver tarjeta 3" data-slide="2">3</button><button aria-label="Ver tarjeta 4" data-slide="3">4</button></div>
     </div>
   </section>
   <section class="transmedia" id="pelicula">
@@ -133,5 +136,7 @@
 
 <script src="site.js" defer></script>
 <script src="app.js" defer></script>
-</body>
+<script>
+(()=>{const slides=[...document.querySelectorAll('.chapter-slide')],dots=[...document.querySelectorAll('[data-slide]')];let index=0;function display(n){index=Math.max(0,Math.min(slides.length-1,n));slides.forEach((slide,i)=>{slide.hidden=i!==index;slide.setAttribute('aria-hidden',String(i!==index))});dots.forEach((dot,i)=>{if(i===index)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current')});document.getElementById('chapterPosition').textContent=`${index+1} de ${slides.length}`;document.getElementById('chapterPrev').disabled=index===0;document.getElementById('chapterNext').disabled=index===slides.length-1}document.getElementById('chapterPrev').onclick=()=>display(index-1);document.getElementById('chapterNext').onclick=()=>display(index+1);dots.forEach(dot=>dot.onclick=()=>display(Number(dot.dataset.slide)));display(0)})();
+</script></body>
 </html>
