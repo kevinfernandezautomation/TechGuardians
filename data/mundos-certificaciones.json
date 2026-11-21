@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "notice": "Educational references only. No accreditation or partnership implied.",
+  "worlds": [
+    {
+      "id": "data",
+      "index": 0,
+      "name": "DATA GUARDIANS",
+      "objective": {
+        "es": "Analizar y proteger la calidad de los datos con SQL, indicadores y visualización.",
+        "en": "Analyze and safeguard data quality using SQL, KPIs and visualization."
+      },
+      "certifications": [
+        {
+          "name": "Microsoft Power BI Data Analyst (PL-300)",
+          "issuer": "Microsoft",
+          "url": "https://learn.microsoft.com/credentials/certifications/power-bi-data-analyst-associate/"
+        }
+      ],
+      "resource": {
+        "name": "freeCodeCamp",
+        "url": "https://www.youtube.com/@freecodecamp"
+      }
+    },
+    {
+      "id": "aero",
+      "index": 1,
+      "name": "AERO GUARDIANS",
+      "objective": {
+        "es": "Comprender operación segura de drones, navegación y gestión de riesgos.",
+        "en": "Understand safe drone operation, navigation and risk management."
+      },
+      "certifications": [
+        {
+          "name": "FAA Remote Pilot (Part 107)",
+          "issuer": "FAA",
+          "url": "https://www.faa.gov/uas/commercial_operators"
+        }
+      ],
+      "resource": {
+        "name": "FAA",
+        "url": "https://www.youtube.com/@FAANews"
+      }
+    },
+    {
+      "id": "robot",
+      "index": 2,
+      "name": "ROBO GUARDIANS",
+      "objective": {
+        "es": "Aplicar sensores, actuadores y automatización robótica.",
+        "en": "Apply sensors, actuators and robotic automation."
+      },
+      "certifications": [
+        {
+          "name": "ISA Certified Automation Professional (CAP)",
+          "issuer": "ISA",
+          "url": "https://www.isa.org/certification"
+        }
+      ],
+      "resource": {
+        "name": "Arduino",
+        "url": "https://www.youtube.com/@Arduino"
+      }
+    },
+    {
+      "id": "cyber",
+      "index": 3,
+      "name": "CYBER GUARDIANS",
+      "objective": {
+        "es": "Identificar amenazas y seleccionar controles de seguridad.",
+        "en": "Identify threats and choose security controls."
+      },
+      "certifications": [
+        {
+          "name": "CompTIA Security+",
+          "issuer": "CompTIA",
+          "url": "https://www.comptia.org/certifications/security"
+        },
+        {
+          "name": "ISC2 Certified in Cybersecurity (CC)",
+          "issuer": "ISC2",
+          "url": "https://www.isc2.org/certifications/cc"
+        }
+      ],
+      "resource": {
+        "name": "Professor Messer",
+        "url": "https://www.professormesser.com/"
+      }
+    },
+    {
+      "id": "qa",
+      "index": 4,
+      "name": "QA GUARDIANS",
+      "objective": {
+        "es": "Diseñar y ejecutar pruebas, identificar defectos y gestionar riesgos.",
+        "en": "Design and execute tests, identify defects and manage risks."
+      },
+      "certifications": [
+        {
+          "name": "ISTQB CTFL",
+          "issuer": "ISTQB",
+          "url": "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/"
+        }
+      ],
+      "resource": {
+        "name": "Ministry of Testing",
+        "url": "https://www.youtube.com/@MinistryOfTesting"
+      }
+    },
+    {
+      "id": "support",
+      "index": 5,
+      "name": "SUPPORT GUARDIANS",
+      "objective": {
+        "es": "Diagnosticar incidencias y mejorar la atención de servicios TI.",
+        "en": "Diagnose incidents and improve IT service support."
+      },
+      "certifications": [
+        {
+          "name": "CompTIA A+",
+          "issuer": "CompTIA",
+          "url": "https://www.comptia.org/certifications/a"
+        }
+      ],
+      "resource": {
+        "name": "Professor Messer",
+        "url": "https://www.professormesser.com/"
+      }
+    },
+    {
+      "id": "fullstack",
+      "index": 6,
+      "name": "FULLSTACK GUARDIANS",
+      "objective": {
+        "es": "Integrar frontend, backend, API, bases de datos y pruebas.",
+        "en": "Integrate frontend, backend, APIs, databases and tests."
+      },
+      "certifications": [
+        {
+          "name": "AWS Certified Developer – Associate",
+          "issuer": "AWS",
+          "url": "https://aws.amazon.com/certification/certified-developer-associate/"
+        }
+      ],
+      "resource": {
+        "name": "freeCodeCamp",
+        "url": "https://www.youtube.com/@freecodecamp"
+      }
+    },
+    {
+      "id": "nano",
+      "index": 7,
+      "name": "NANO GUARDIANS",
+      "objective": {
+        "es": "Comprender materiales a nanoescala y sus aplicaciones.",
+        "en": "Understand nanoscale materials and their applications."
+      },
+      "certifications": [],
+      "resource": {
+        "name": "MIT OpenCourseWare",
+        "url": "https://www.youtube.com/@mitocw"
+      }
+    },
+    {
+      "id": "devops",
+      "index": 8,
+      "name": "DEVOPS GUARDIANS",
+      "objective": {
+        "es": "Automatizar integración, despliegues y operación de servicios.",
+        "en": "Automate integration, deployment and service operations."
+      },
+      "certifications": [
+        {
+          "name": "KCNA",
+          "issuer": "CNCF",
+          "url": "https://www.cncf.io/training/certification/kcna/"
+        },
+        {
+          "name": "CKAD",
+          "issuer": "CNCF",
+          "url": "https://www.cncf.io/training/certification/ckad/"
+        }
+      ],
+      "resource": {
+        "name": "TechWorld with Nana",
+        "url": "https://www.youtube.com/@TechWorldwithNana"
+      }
+    },
+    {
+      "id": "scrum",
+      "index": 9,
+      "name": "SCRUM GUARDIANS",
+      "objective": {
+        "es": "Aplicar Scrum en equipos y productos ágiles.",
+        "en": "Apply Scrum to agile teams and products."
+      },
+      "certifications": [
+        {
+          "name": "Professional Scrum Master I (PSM I)",
+          "issuer": "Scrum.org",
+          "url": "https://www.scrum.org/assessments/professional-scrum-master-i-certification"
+        }
+      ],
+      "resource": {
+        "name": "Scrum.org",
+        "url": "https://www.scrum.org/resources"
+      }
+    },
+    {
+      "id": "ai",
+      "index": 10,
+      "name": "AI GUARDIANS",
+      "objective": {
+        "es": "Evaluar aplicaciones, límites y riesgos de la inteligencia artificial.",
+        "en": "Evaluate AI applications, limitations and risks."
+      },
+      "certifications": [
+        {
+          "name": "AWS Certified AI Practitioner",
+          "issuer": "AWS",
+          "url": "https://aws.amazon.com/certification/certified-ai-practitioner/"
+        }
+      ],
+      "resource": {
+        "name": "IBM Technology",
+        "url": "https://www.youtube.com/@IBMTechnology"
+      }
+    },
+    {
+      "id": "digital",
+      "index": 11,
+      "name": "DIGITAL GUARDIANS",
+      "objective": {
+        "es": "Interpretar métricas y estrategias de canales digitales.",
+        "en": "Interpret digital channel metrics and strategies."
+      },
+      "certifications": [
+        {
+          "name": "Google Analytics Certification",
+          "issuer": "Google",
+          "url": "https://skillshop.withgoogle.com/"
+        }
+      ],
+      "resource": {
+        "name": "Google Analytics",
+        "url": "https://www.youtube.com/@GoogleAnalytics"
+      }
+    },
+    {
+      "id": "telecom",
+      "index": 12,
+      "name": "TELECOM GUARDIANS",
+      "objective": {
+        "es": "Comprender redes, protocolos y conectividad.",
+        "en": "Understand networks, protocols and connectivity."
+      },
+      "certifications": [
+        {
+          "name": "Cisco CCNA",
+          "issuer": "Cisco",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html"
+        }
+      ],
+      "resource": {
+        "name": "Cisco",
+        "url": "https://www.youtube.com/@Cisco"
+      }
+    },
+    {
+      "id": "quantum",
+      "index": 13,
+      "name": "QUANTUM GUARDIANS",
+      "objective": {
+        "es": "Explorar qubits, puertas y circuitos cuánticos.",
+        "en": "Explore qubits, gates and quantum circuits."
+      },
+      "certifications": [],
+      "resource": {
+        "name": "IBM Quantum Learning",
+        "url": "https://quantum.cloud.ibm.com/learning"
+      }
+    },
+    {
+      "id": "process",
+      "index": 14,
+      "name": "PROCESS GUARDIANS",
+      "objective": {
+        "es": "Modelar, medir y mejorar procesos organizacionales.",
+        "en": "Model, measure and improve organizational processes."
+      },
+      "certifications": [
+        {
+          "name": "ASQ Six Sigma Green Belt",
+          "issuer": "ASQ",
+          "url": "https://asq.org/cert/six-sigma-green-belt"
+        }
+      ],
+      "resource": {
+        "name": "freeCodeCamp",
+        "url": "https://www.youtube.com/@freecodecamp"
+      }
+    },
+    {
+      "id": "english",
+      "index": 15,
+      "name": "ENGLISH TECH GUARDIANS",
+      "objective": {
+        "es": "Practicar comunicación, lectura y vocabulario técnico en inglés.",
+        "en": "Practice technical English communication, reading and vocabulary."
+      },
+      "certifications": [
+        {
+          "name": "TOEIC",
+          "issuer": "ETS",
+          "url": "https://www.ets.org/toeic.html"
+        }
+      ],
+      "resource": {
+        "name": "BBC Learning English",
+        "url": "https://www.youtube.com/@bbclearningenglish"
+      }
+    },
+    {
+      "id": "ml",
+      "index": 16,
+      "name": "MACHINE LEARNING GUARDIANS",
+      "objective": {
+        "es": "Preparar datos, entrenar modelos y evaluar resultados.",
+        "en": "Prepare data, train models and evaluate outcomes."
+      },
+      "certifications": [
+        {
+          "name": "AWS Certified Machine Learning Engineer – Associate",
+          "issuer": "AWS",
+          "url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/"
+        }
+      ],
+      "resource": {
+        "name": "freeCodeCamp",
+        "url": "https://www.youtube.com/@freecodecamp"
+      }
+    },
+    {
+      "id": "startup",
+      "index": 17,
+      "name": "INNOVATION GUARDIANS",
+      "objective": {
+        "es": "Validar ideas y diseñar soluciones innovadoras.",
+        "en": "Validate ideas and design innovative solutions."
+      },
+      "certifications": [],
+      "resource": {
+        "name": "Stanford Online",
+        "url": "https://www.youtube.com/@stanfordonline"
+      }
+    },
+    {
+      "id": "governance",
+      "index": 18,
+      "name": "IT GOVERNANCE GUARDIANS",
+      "objective": {
+        "es": "Relacionar riesgos, controles y decisiones de gobierno de TI.",
+        "en": "Relate IT governance decisions to risks and controls."
+      },
+      "certifications": [
+        {
+          "name": "COBIT Foundation",
+          "issuer": "ISACA",
+          "url": "https://www.isaca.org/credentialing/cobit-foundation"
+        }
+      ],
+      "resource": {
+        "name": "ISACA",
+        "url": "https://www.youtube.com/@ISACA"
+      }
+    },
+    {
+      "id": "public",
+      "index": 19,
+      "name": "GOVERNMENT RELATIONS GUARDIANS",
+      "objective": {
+        "es": "Analizar transparencia, ética y colaboración con instituciones públicas.",
+        "en": "Analyze transparency, ethics and public-sector collaboration."
+      },
+      "certifications": [],
+      "resource": {
+        "name": "UNESCO",
+        "url": "https://www.youtube.com/@UNESCO"
+      }
+    },
+    {
+      "id": "skills",
+      "index": 20,
+      "name": "POWER SKILLS GUARDIANS",
+      "objective": {
+        "es": "Fortalecer liderazgo, colaboración y comunicación.",
+        "en": "Strengthen leadership, collaboration and communication."
+      },
+      "certifications": [],
+      "resource": {
+        "name": "TED",
+        "url": "https://www.youtube.com/@TED"
+      }
+    },
+    {
+      "id": "fintech",
+      "index": 21,
+      "name": "FINTECH GUARDIANS",
+      "objective": {
+        "es": "Identificar riesgos en pagos, fraude y servicios financieros digitales.",
+        "en": "Identify risks in payments, fraud and digital financial services."
+      },
+      "certifications": [
+        {
+          "name": "CAMS",
+          "issuer": "ACAMS",
+          "url": "https://www.acams.org/en/certifications/cams-certification"
+        }
+      ],
+      "resource": {
+        "name": "IBM Technology",
+        "url": "https://www.youtube.com/@IBMTechnology"
+      }
+    },
+    {
+      "id": "gametech",
+      "index": 22,
+      "name": "GAMETECH GUARDIANS",
+      "objective": {
+        "es": "Diseñar mecánicas, físicas y pruebas de videojuegos.",
+        "en": "Design game mechanics, physics and game testing."
+      },
+      "certifications": [
+        {
+          "name": "Unity Certified Associate",
+          "issuer": "Unity",
+          "url": "https://unity.com/products/unity-certifications"
+        }
+      ],
+      "resource": {
+        "name": "Unity",
+        "url": "https://www.youtube.com/@unity"
+      }
+    },
+    {
+      "id": "recruiter",
+      "index": 23,
+      "name": "TECH RECRUITER GUARDIANS",
+      "objective": {
+        "es": "Evaluar talento tecnológico con criterios claros y justos.",
+        "en": "Evaluate technology talent using fair and clear criteria."
+      },
+      "certifications": [
+        {
+          "name": "SHRM-CP",
+          "issuer": "SHRM",
+          "url": "https://www.shrm.org/credentials/certification/shrm-cp"
+        }
+      ],
+      "resource": {
+        "name": "SHRM",
+        "url": "https://www.youtube.com/@SHRM"
+      }
+    },
+    {
+      "id": "audit",
+      "index": 24,
+      "name": "IT AUDIT GUARDIANS",
+      "objective": {
+        "es": "Planificar auditorías de TI y analizar controles y evidencias.",
+        "en": "Plan IT audits and analyze controls and evidence."
+      },
+      "certifications": [
+        {
+          "name": "CISA",
+          "issuer": "ISACA",
+          "url": "https://www.isaca.org/credentialing/cisa"
+        }
+      ],
+      "resource": {
+        "name": "ISACA",
+        "url": "https://www.youtube.com/@ISACA"
+      }
+    },
+    {
+      "id": "xr",
+      "index": 25,
+      "name": "XR GUARDIANS",
+      "objective": {
+        "es": "Diseñar experiencias de realidad aumentada, virtual y mixta.",
+        "en": "Design augmented, virtual and mixed reality experiences."
+      },
+      "certifications": [
+        {
+          "name": "Unity Certified Associate",
+          "issuer": "Unity",
+          "url": "https://unity.com/products/unity-certifications"
+        }
+      ],
+      "resource": {
+        "name": "Unity",
+        "url": "https://www.youtube.com/@unity"
+      }
+    },
+    {
+      "id": "greentech",
+      "index": 26,
+      "name": "GREENTECH GUARDIANS",
+      "objective": {
+        "es": "Evaluar sostenibilidad y eficiencia de soluciones tecnológicas.",
+        "en": "Evaluate sustainability and technology efficiency."
+      },
+      "certifications": [
+        {
+          "name": "LEED Green Associate",
+          "issuer": "USGBC",
+          "url": "https://www.usgbc.org/credentials/leed-green-associate"
+        }
+      ],
+      "resource": {
+        "name": "UNESCO",
+        "url": "https://www.youtube.com/@UNESCO"
+      }
+    },
+    {
+      "id": "biotech",
+      "index": 27,
+      "name": "BIOTECH GUARDIANS",
+      "objective": {
+        "es": "Comprender bioprocesos, bioseguridad y calidad.",
+        "en": "Understand bioprocesses, biosafety and quality."
+      },
+      "certifications": [],
+      "resource": {
+        "name": "MIT OpenCourseWare",
+        "url": "https://www.youtube.com/@mitocw"
+      }
+    },
+    {
+      "id": "sales",
+      "index": 28,
+      "name": "IT SALES SOLUTIONS GUARDIANS",
+      "objective": {
+        "es": "Diagnosticar necesidades y proponer soluciones de TI.",
+        "en": "Diagnose needs and propose IT solutions."
+      },
+      "certifications": [
+        {
+          "name": "HubSpot Academy Sales Software",
+          "issuer": "HubSpot Academy",
+          "url": "https://academy.hubspot.com/"
+        }
+      ],
+      "resource": {
+        "name": "HubSpot",
+        "url": "https://www.youtube.com/@HubSpot"
+      }
+    },
+    {
+      "id": "project",
+      "index": 29,
+      "name": "IT PROJECT MANAGEMENT GUARDIANS",
+      "objective": {
+        "es": "Planificar proyectos, gestionar riesgos y dar seguimiento.",
+        "en": "Plan projects, manage risks and monitor progress."
+      },
+      "certifications": [
+        {
+          "name": "CAPM",
+          "issuer": "PMI",
+          "url": "https://www.pmi.org/certifications/certified-associate-capm"
+        }
+      ],
+      "resource": {
+        "name": "PMI",
+        "url": "https://www.youtube.com/@PMInstitute"
+      }
+    },
+    {
+      "id": "consulting",
+      "index": 30,
+      "name": "IT CONSULTING GUARDIANS",
+      "objective": {
+        "es": "Analizar necesidades y recomendar mejoras tecnológicas.",
+        "en": "Analyze needs and recommend technology improvements."
+      },
+      "certifications": [
+        {
+          "name": "ECBA",
+          "issuer": "IIBA",
+          "url": "https://www.iiba.org/business-analysis-certifications/ecba/"
+        }
+      ],
+      "resource": {
+        "name": "IBM Technology",
+        "url": "https://www.youtube.com/@IBMTechnology"
+      }
+    },
+    {
+      "id": "enterprise",
+      "index": 31,
+      "name": "ENTERPRISE SYSTEMS GUARDIANS",
+      "objective": {
+        "es": "Comprender ERP e integración de procesos empresariales.",
+        "en": "Understand ERP and enterprise process integration."
+      },
+      "certifications": [
+        {
+          "name": "SAP Certified Associate",
+          "issuer": "SAP",
+          "url": "https://learning.sap.com/certifications"
+        }
+      ],
+      "resource": {
+        "name": "SAP",
+        "url": "https://www.youtube.com/@SAP"
+      }
+    },
+    {
+      "id": "iot",
+      "index": 32,
+      "name": "IOT GUARDIANS",
+      "objective": {
+        "es": "Conectar sensores y evaluar riesgos de dispositivos IoT.",
+        "en": "Connect sensors and assess IoT device risks."
+      },
+      "certifications": [
+        {
+          "name": "Cisco CCNA",
+          "issuer": "Cisco",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html"
+        }
+      ],
+      "resource": {
+        "name": "Arduino",
+        "url": "https://www.youtube.com/@Arduino"
+      }
+    },
+    {
+      "id": "training",
+      "index": 33,
+      "name": "TECHNICAL EDUCATION GUARDIANS",
+      "objective": {
+        "es": "Diseñar actividades y evaluar aprendizaje técnico.",
+        "en": "Design learning activities and assess technical learning."
+      },
+      "certifications": [],
+      "resource": {
+        "name": "UNESCO",
+        "url": "https://www.youtube.com/@UNESCO"
+      }
+    },
+    {
+      "id": "medtech",
+      "index": 34,
+      "name": "MEDTECH GUARDIANS",
+      "objective": {
+        "es": "Evaluar la seguridad, gestión de riesgos, calidad y trazabilidad de dispositivos médicos.",
+        "en": "Assess medical-device safety, risk management, quality and traceability.",
+        "pt": "Avaliar a segurança, os riscos, a qualidade e a rastreabilidade de dispositivos médicos.",
+        "ja": "医療機器の安全性、リスク管理、品質、トレーサビリティを評価する。",
+        "zh-CN": "评估医疗设备的安全、风险管理、质量和可追溯性。",
+        "id": "Mengevaluasi keselamatan, manajemen risiko, mutu, dan ketertelusuran alat medis."
+      },
+      "certifications": [
+        {
+          "name": "ISO 13485 — Norma de sistemas de calidad (no certificación personal)",
+          "issuer": "ISO",
+          "url": "https://www.iso.org/standard/59752.html"
+        },
+        {
+          "name": "ISO 14971 — Norma de gestión de riesgos (no certificación personal)",
+          "issuer": "ISO",
+          "url": "https://www.iso.org/standard/72704.html"
+        },
+        {
+          "name": "IEC 62304 — Norma de ciclo de vida de software médico",
+          "issuer": "IEC",
+          "url": "https://webstore.iec.ch/en/publication/22794"
+        }
+      ],
+      "resource": {
+        "name": "U.S. FDA — Medical Devices",
+        "url": "https://www.fda.gov/medical-devices"
+      }
+    }
+  ]
+}
